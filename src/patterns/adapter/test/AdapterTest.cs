@@ -55,9 +55,9 @@ namespace DesignPatterns.Test
 
             ExcelSpreadsheet excel = new ExcelSpreadsheet()
             {
-                table = new string[1, 1]
+                Data = new string[1, 1]
             };
-            excel.table[0, 0] = "excel data";
+            excel.Data[0, 0] = "excel data";
             string result = "FAIL";
 
             if (processor.Process(ExcelToJsonAdapter.From(excel).ToJson()) == "Processed: parsed json data from -> excel data")

@@ -1,4 +1,4 @@
 public class ExcelSpreadsheet
 {
-    public string[,] table { get; set; }
+    public string[,] Data { get; set; }
 }

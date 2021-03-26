@@ -19,7 +19,7 @@ namespace DesignPatterns.Patterns
         {
             var json = new Json
             {
-                Data = "parsed json data from -> " + received.table[0, 0]
+                Data = "parsed json data from -> " + received.Data[0, 0]
             };
             return json;
         }
