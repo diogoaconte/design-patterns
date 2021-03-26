@@ -43,7 +43,7 @@ namespace DesignPatterns.Test
             };
             string result = "FAIL";
 
-            if (processor.Process(XmlToJsonAdapter.From(xml)) == "Processed: parsed json data from -> xml data")
+            if (processor.Process(XmlToJsonAdapter.From(xml).ToJson()) == "Processed: parsed json data from -> xml data")
             {
                 result = "PASS";
             }
@@ -60,7 +60,7 @@ namespace DesignPatterns.Test
             excel.table[0, 0] = "excel data";
             string result = "FAIL";
 
-            if (processor.Process(ExcelToJsonAdapter.From(excel)) == "Processed: parsed json data from -> excel data")
+            if (processor.Process(ExcelToJsonAdapter.From(excel).ToJson()) == "Processed: parsed json data from -> excel data")
             {
                 result = "PASS";
             }

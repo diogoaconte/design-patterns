@@ -4,9 +4,9 @@ namespace DesignPatterns.Test
 {
     public class ProcessorJson
     {
-        public string Process(IJson input)
+        public string Process(Json json)
         {
-            return "Processed: " + input.extractData();
+            return "Processed: " + json.Data;
         }
     }
 }
