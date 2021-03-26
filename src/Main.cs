@@ -6,8 +6,8 @@ namespace DesignPatterns
     {
         static void Main()
         {
-            var t = new AdapterTest();
-            t.Test();
+            var adapterTest = new AdapterTest();
+            adapterTest.Test();
         }
     }
 }

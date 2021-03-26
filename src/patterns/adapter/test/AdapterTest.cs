@@ -32,7 +32,7 @@ namespace DesignPatterns.Test
             {
                 result = "PASS";
             }
-            Console.WriteLine("TestJsonObject: " + result);
+            Console.WriteLine("AdapterTest - TestJsonObject: " + result);
         }
 
         private void TestXmlObject()
@@ -47,7 +47,7 @@ namespace DesignPatterns.Test
             {
                 result = "PASS";
             }
-            Console.WriteLine("TestXmlObject: " + result);
+            Console.WriteLine("AdapterTest - TestXmlObject: " + result);
         }
 
         private void TestExcelObject()
@@ -64,7 +64,7 @@ namespace DesignPatterns.Test
             {
                 result = "PASS";
             }
-            Console.WriteLine("TestExcelObject: " + result);
+            Console.WriteLine("AdapterTest - TestExcelObject: " + result);
         }
     }
 }
