@@ -1,6 +1,6 @@
 using DesignPatterns.Models;
 
-namespace DesignPatterns.Patterns
+namespace DesignPatterns.Patterns.Adapter
 {
     public class XmlToJsonAdapter : AbstractAdapter<Xml, Json>, IJsonAdapter
     {

@@ -1,5 +1,5 @@
 using DesignPatterns.Models;
-using DesignPatterns.Patterns;
+using DesignPatterns.Patterns.Adapter;
 using System;
 
 namespace DesignPatterns.Test

@@ -1,4 +1,7 @@
-public abstract class AbstractAdapter<R, T>
+namespace DesignPatterns.Patterns.Adapter
 {
-    protected abstract T Parse(R received);
+    public abstract class AbstractAdapter<R, T>
+    {
+        protected abstract T Parse(R received);
+    }
 }

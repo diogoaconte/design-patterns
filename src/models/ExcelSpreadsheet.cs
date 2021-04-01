@@ -1,4 +1,7 @@
-public class ExcelSpreadsheet
+namespace DesignPatterns.Models
 {
-    public string[,] Data { get; set; }
+    public class ExcelSpreadsheet
+    {
+        public string[,] Data { get; set; }
+    }
 }
