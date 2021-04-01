@@ -2,8 +2,8 @@ using DesignPatterns.Models;
 
 namespace DesignPatterns.Patterns.Adapter
 {
-    public interface IJsonAdapter
+    public interface IJson
     {
-        Json ToJson();
+        Json Json();
     }
 }

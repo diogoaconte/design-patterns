@@ -2,7 +2,7 @@ using DesignPatterns.Models;
 
 namespace DesignPatterns.Patterns.Adapter
 {
-    public class XmlToJsonAdapter : AbstractAdapter<Xml, Json>, IJsonAdapter
+    public class XmlToJsonAdapter : AbstractAdapter<Xml, Json>, IJson
     {
         private readonly Xml xml;
         
@@ -11,7 +11,7 @@ namespace DesignPatterns.Patterns.Adapter
             return new XmlToJsonAdapter(xml);
         }
 
-        public Json ToJson()
+        public Json Json()
         {
             return Parse(xml);
         }

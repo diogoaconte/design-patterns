@@ -2,7 +2,7 @@ using DesignPatterns.Models;
 
 namespace DesignPatterns.Patterns.Adapter
 {
-    public class ExcelToJsonAdapter : AbstractAdapter<ExcelSpreadsheet, Json>, IJsonAdapter
+    public class ExcelToJsonAdapter : AbstractAdapter<ExcelSpreadsheet, Json>, IJson
     {
         private readonly ExcelSpreadsheet excel;
         public static ExcelToJsonAdapter From(ExcelSpreadsheet excel)
@@ -10,7 +10,7 @@ namespace DesignPatterns.Patterns.Adapter
             return new ExcelToJsonAdapter(excel);
         }
 
-        public Json ToJson()
+        public Json Json()
         {
             return Parse(excel);
         }

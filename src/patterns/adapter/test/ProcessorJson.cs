@@ -1,12 +1,12 @@
-using DesignPatterns.Models;
+using DesignPatterns.Patterns.Adapter;
 
 namespace DesignPatterns.Test
 {
     public class ProcessorJson
     {
-        public string Process(Json json)
+        public string Process(IJson json)
         {
-            return "Processed: " + json.Data;
+            return "Processed: " + json.Json().Data;
         }
     }
 }
